@@ -1,0 +1,87 @@
+name: quantum-ml-pricing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.10
+
+  # Core Scientific Computing
+  - numpy
+  - scipy
+  - pandas
+  - scikit-learn
+
+  # Deep Learning & TensorFlow Stack
+  - tensorflow=2.13
+  - keras
+
+  # Data Processing & Analysis
+  - matplotlib
+  - seaborn
+  - plotly
+  - jupyter
+  - jupyterlab
+  - ipywidgets
+
+  # Experiment Tracking
+  - mlflow
+
+  # Dashboard
+  - streamlit
+
+  # Utilities
+  - tqdm
+  - pyyaml
+  - requests
+
+  # Development & Testing
+  - pytest
+  - black
+  - flake8
+
+  # Performance
+  - numba
+  - joblib
+
+  # Statistical Analysis
+  - statsmodels
+
+  # Database dependencies
+  - lz4
+  - zstandard
+
+  # Pip packages
+  - pip
+  - pip:
+      # TensorFlow Quantum
+      - tensorflow-quantum
+      - cirq
+      - sympy
+
+      # ArcticDB
+      - arcticdb
+
+      # Financial libraries
+      - yfinance
+      - pandas-datareader
+      - arch
+
+      # Advanced ML
+      - xgboost
+      - lightgbm
+
+      # SDE
+      - sdeint
+
+      # Optimization
+      - optuna
+
+      # Explainability
+      - shap
+
+      # Validation
+      - pydantic
+
+      # Network analysis
+      - networkx
